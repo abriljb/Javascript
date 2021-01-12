@@ -1,0 +1,34 @@
+*{
+padding: 0;
+margin: 0;
+}
+
+
+
+.header{
+    position: fixed;
+}
+
+.header .logo-container{
+    padding: 10px;
+    background-color: red;
+    width: 100vw;
+
+}
+
+
+
+.header .logo-container img{
+    width: 90px;
+
+}
+
+.nav-container{
+    position: fixed;
+}
+
+
+.main{
+    height: 100vh;
+    background-color: grey;
+}
