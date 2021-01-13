@@ -6,7 +6,12 @@ margin: 0;
 
 
 .header{
-    position: fixed;
+
+    
+
+    display: grid;
+    grid-auto-flow: column;
+
 }
 
 .header .logo-container{
@@ -21,10 +26,6 @@ margin: 0;
 .header .logo-container img{
     width: 90px;
 
-}
-
-.nav-container{
-    position: fixed;
 }
 
 
