@@ -1,0 +1,257 @@
+*{
+padding: 0;
+margin: 0;
+font-family: sans-serif;
+}
+
+.header-container{
+    width: 100vw;
+    height: 100px;
+    background-color: red;
+
+    /*CSS GRID */
+    display: grid;
+    grid-template-columns: 20px 1fr 1fr 20px;
+
+
+}
+
+
+.icon-container{
+    width: 100vw;
+    height: 50px;
+}
+
+
+
+.hide.hide{
+    position: fixed;
+    width: 100vw;
+    top: -80px;
+    background-color: green;
+}
+
+.hide.show{
+    position: fixed;
+    width: 100vw;
+    top: -80px;
+    background-color: red;
+}
+
+img{
+    width: 80px;
+}
+
+
+
+.header-container .logo-container{
+    align-items: center;
+   
+
+    /*CSS GRID */
+    grid-column: 2/3;
+    display: grid;
+}
+
+.header-container .logo-container img{
+    width: 60px;
+}
+
+
+.header-container .icon-container{
+display: none;
+
+
+    /* CSS GRID */
+
+}
+
+.header-container .Navigators{
+    list-style: none;
+
+
+    /* CSS GRID */
+    grid-column: 3/4;
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+}
+
+.header-container .Navigators li:hover{
+    color: white;
+    cursor: pointer;
+}
+
+
+
+/* MEDIA QUERY FOR RESPONSIVE */
+
+
+/* LARGE DEVICES */
+@media (min-width:767px) and (max-width:992px){
+ 
+
+   
+
+
+}
+
+/* MEDIUM DEVICES */
+@media (min-width:576px) and (max-width:766px){
+ 
+
+    /* HELPER BARS */
+    .header-container .icon-container{
+        display: block;
+ 
+    }
+
+    .header-container .icon-container{
+        color: white;
+
+        /* CSS GRID */
+        grid-column: 3/4;
+        display: grid;
+        justify-items: end;
+        align-items: center;
+    }
+    .header-container .icon-container i{
+        font-size: 40px;
+    }
+    .header-container .icon-container i:hover{
+        color: black;
+        cursor: pointer;
+    }
+
+
+
+    .header-container .Navigators{
+        position: fixed;
+        height: 250px;
+        background-color: rgb(63, 61, 61);
+        width: 100vw;
+        top: 100px;
+        transition: 0.5s ease;
+
+
+        /* NAVIGATORS */
+        grid-auto-flow: row;
+        grid-auto-rows:1fr;
+        align-items: unset;
+    }
+
+    .header-container .Navigators li{
+       
+        
+
+        /* Layout */
+        display: grid;
+        place-items: center;
+    }
+
+    .header-container .Navigators li:hover{
+        color: white;
+        background-color: rgb(102, 95, 95);
+
+    }
+
+
+    /* Menu Animation */
+
+    .header-container .Navigators.hide{
+        height: 0px;
+    }
+    .header-container .Navigators.hide li{
+        display: none;
+    }
+
+    .header-container .Navigators.show{
+        height: 250px;
+    }
+    
+    
+
+
+
+}
+
+/* SMALL DEVICES */
+@media  (max-width:577px){
+ 
+
+     /* HELPER BARS */
+     .header-container .icon-container{
+        display: block;
+    }
+
+    .header-container .icon-container{
+        color: white;
+
+        /* CSS GRID */
+        grid-column: 3/4;
+        display: grid;
+        justify-items: end;
+        align-items: center;
+    }
+    .header-container .icon-container i{
+        font-size: 40px;
+    }
+    .header-container .icon-container i:hover{
+        color: black;
+        cursor: pointer;
+    }
+
+
+
+    .header-container .Navigators{
+        position: fixed;
+        height: 250px;
+        background-color: rgb(63, 61, 61);
+        width: 100vw;
+        top: 100px;
+        transition: 0.5s ease;
+
+
+        /* NAVIGATORS */
+        grid-auto-flow: row;
+        grid-auto-rows:1fr;
+        align-items: unset;
+    }
+
+    .header-container .Navigators li{
+        
+
+        /* Layout */
+        display: grid;
+        place-items: center;
+    }
+
+    .header-container .Navigators li:hover{
+        color: white;
+        background-color: rgb(102, 95, 95);
+
+    }
+
+
+     /* Menu Animation */
+     .header-container .Navigators.hide{
+        height: 0px;
+    }
+    .header-container .Navigators.hide li{
+        display: none;
+    }
+
+    .header-container .Navigators.show{
+        height: 250px;
+    }
+    
+
+    
+    
+
+
+
+
+
+}
+>>>>>>> d55a8490d0991d85ebc34c290fb088864f572689
