@@ -11,23 +11,32 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <div class="main-header">
-        <div class="logo-container">
-            <img src="img/5a28d563aa6e96.1476758515126255076981.png" alt="Logo">
-        </div>
-        <div id="iconTrigger" class="icon-container">
-            <i id="icon" class="fa fa-bars"></i>
-        </div>
-        <ul class="menu-container">
-            <li>Home</li>
+    <div class="icon-container">
+        <i id="icon" class="fa fa-bars"></i>
+        <ul class="hide show">
+            <li>About</li>
             <li>Service</li>
-            <li>Product</li>
             <li>About</li>
         </ul>
     </div>
+    <div class="main">
+        <h1 id="statusdoor">waka</h1>
+        <img id="door" src="img/Closedoor.png" alt="">
+        <button onclick="OpenClose()">Opendoor</button>
+        <button onclick="CloseOpen()">Closedoor</button>
+    </div>
+   
+    <div class="Computation">
 
-    <div class="main"></div>
+        <input id="numone" type="text">
+        <input id="numtwo" type="text">
+        <button onclick="yow()">Compute</button>
+        <h3 id="total"></h3>
+    </div>
 
     
 </body>
 </html>
+
+
+<script src="index.js"></script>    
