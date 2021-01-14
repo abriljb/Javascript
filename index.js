@@ -1,10 +1,10 @@
-<<<<<<< HEAD
+
 const OpenChanger = document.querySelector('.icon-container')
 const CloseChanger = document.querySelector('#icon')
 const MenuContainer = document.querySelector('.hide')
 const para = document.querySelector('main')
 
-CloseChanger.addEventListener('click', () =>{
+CloseChanger.addEventListener('click', () =>{z
     if(CloseChanger.classList.contains('fa-bars')){
         CloseChanger.classList.remove('fa-bars')
         CloseChanger.classList.add('fa-close')
@@ -44,7 +44,7 @@ const yow = () =>{
 
 
 
-=======
+
 const iconTrigger = document.querySelector('#iconTrigger')
 const icon = document.querySelector('#icon')
 const MenuContainer = document.querySelector('.Navigators')
@@ -70,4 +70,4 @@ iconTrigger.addEventListener('click', () =>{
     }
 
 })
->>>>>>> d55a8490d0991d85ebc34c290fb088864f572689
+
